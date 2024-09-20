@@ -64,8 +64,8 @@ return {
         -- this is useful for naming menus
         ["<Leader>b"] = { name = "Buffers" },
 
-        -- setting a mapping to false will disable it
-        -- ["<C-S>"] = false,
+        -- IncRename
+        ["<Leader>rn"] = { ":IncRename", desc = "Incremental Rename" },
       },
       v = {
         ["K"] = { ":move '<-2<CR>gv-gv" },
