@@ -1,7 +1,7 @@
 return {
   "lervag/vimtex",
   lazy = false,
-  init = function() vim.g.vimtex_view_method = "sioyek" end,
+  init = function() vim.g.vimtex_view_method = "skim" end,
   dependencies = {
     "AstroNvim/astrocore",
     opts = {
