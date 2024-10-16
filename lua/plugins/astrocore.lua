@@ -17,7 +17,7 @@ return {
       cmp = true, -- enable completion at start
       diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
       highlighturl = true, -- highlight URLs at start
-      notifications = true, -- enable notifications at start
+      notifications = false, -- enable notifications at start
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
@@ -63,6 +63,10 @@ return {
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         ["<Leader>b"] = { name = "Buffers" },
+        ["<Leader>fg"] = {
+          function() require("telescope").extensions.live_grep_args.live_grep_args() end,
+          desc = "Live grep with args",
+        },
 
         -- IncRename
         ["<Leader>rn"] = { ":IncRename", desc = "Incremental Rename" },
