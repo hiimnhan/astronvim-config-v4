@@ -105,5 +105,13 @@ return {
 
       "nvim-tree/nvim-web-devicons",
     },
+    {
+      "folke/tokyonight.nvim",
+      lazy = false,
+      priority = 1000,
+      opts = {
+        transparent = true,
+      },
+    },
   },
 }
