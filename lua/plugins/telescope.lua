@@ -48,12 +48,11 @@ return {
         maps.n["<Leader>fc"] =
           { function() require("telescope.builtin").grep_string() end, desc = "Find word under cursor" }
         maps.n["<Leader>fC"] = { function() require("telescope.builtin").commands() end, desc = "Find commands" }
-        maps.n["<Leader>ff"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" }
+        maps.n["<Leader>ff"] = { function() require("telescope.builtin").git_files() end, desc = "Find files" }
         maps.n["<Leader>fF"] = {
           function() require("telescope.builtin").find_files { hidden = true, no_ignore = true } end,
           desc = "Find all files",
         }
-        maps.n["<Leader>fg"] = { function() require("telescope.builtin").git_files() end, desc = "Find git files" }
         maps.n["<Leader>fh"] = { function() require("telescope.builtin").help_tags() end, desc = "Find help" }
         maps.n["<Leader>fk"] = { function() require("telescope.builtin").keymaps() end, desc = "Find keymaps" }
         maps.n["<Leader>fm"] = { function() require("telescope.builtin").man_pages() end, desc = "Find man" }
@@ -68,8 +67,7 @@ return {
           desc = "Find themes",
         }
         if vim.fn.executable "rg" == 1 then
-          maps.n["<Leader>fw"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" }
-          maps.n["<Leader>fW"] = {
+          maps.n["<Leader>fg"] = {
             function()
               -- require("telescope.builtin").live_grep {
               --   additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
