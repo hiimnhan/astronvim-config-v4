@@ -67,7 +67,7 @@ return {
           desc = "Find themes",
         }
         if vim.fn.executable "rg" == 1 then
-          maps.n["<Leader>fg"] = {
+          maps.n["<Leader>fw"] = {
             function()
               -- require("telescope.builtin").live_grep {
               --   additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
