@@ -11,7 +11,6 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.quarto" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.julia" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.blink-cmp" },
