@@ -12,7 +12,7 @@ return {
   { import = "astrocommunity.pack.quarto" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.julia" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.blink-cmp" },
   -- import/override with your plugins folder
 }
