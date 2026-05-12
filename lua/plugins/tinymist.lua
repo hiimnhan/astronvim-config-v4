@@ -10,6 +10,12 @@ return {
         },
         root_dir = function() return vim.fn.getcwd() end,
         on_attach = function(client, bufnr)
+          client:exec_cmd({
+            title = "pin",
+            command = "tinymist.pinMain",
+            arguments = { vim.fn.getcwd() .. "/main.typ" },
+          }, { bufnr = bufnr })
+
           vim.keymap.set(
             "n",
             "<leader>tm",
